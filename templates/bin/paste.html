@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Paste</title>
+</head>
+<body>
+		<form action="" method="POST">
+			{% csrf_token %}
+			{{ text_input.as_p }}
+
+			<input type="submit" value="Submit" name="">
+		</form>
+</body>
+</html>
