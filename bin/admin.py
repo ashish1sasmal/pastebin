@@ -1,4 +1,6 @@
 from django.contrib import admin
 from .models import Text
 # Register your models here.
-admin.site.register(Text)
+class TextAdmin(admin.ModelAdmin):
+	list_display=['topic','created_on','creator']
+admin.site.register(Text,TextAdmin)
