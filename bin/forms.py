@@ -18,4 +18,9 @@ class TextForm(forms.ModelForm):
 		model=Text
 		exclude=('created_on','creator',)
 
+# class EditBookForm(forms.ModelForm):
+# 	class Meta():
+# 		models=Text
+# 		fields=['content','updated_on','updated_by',]
+
 

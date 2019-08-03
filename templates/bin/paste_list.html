@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LIst</title>
+</head>
+<body>
+	{% for i in f %}
+		{% if i.creator in u %}
+		<h4>{{i.topic}}</h4>
+		{% endif %}
+	{% endfor %}
+</body>
+</html>

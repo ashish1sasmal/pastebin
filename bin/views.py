@@ -72,4 +72,10 @@ def user_login(request):
 
 	else:
 		return render(request,'bin/login.html',{})
+
+
+@login_required
+def paste_list(request):
+	f=Text.objects.all()
+	return render(request,'bin/paste_list.html',{'f':f,'u':[request.user]})
 	
