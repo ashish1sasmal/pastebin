@@ -8,7 +8,8 @@
 	<a href="{% url 'bin:register' %}">Register</a>
 	<a href="{% url 'bin:paste' %}">Paste</a>
 	{% if user.is_authenticated %}
-		<a href="{% url 'user_logout' %}">LOgout</a>
+		<a href="{% url 'user_logout' %}">LOgout</a><br>
+		<h1><a href="">Welcome {{ request.user }}</a></h1>
 	{% else %}
 		<a href="{% url 'bin:user_login' %}">Login</a>
 	{% endif %}
