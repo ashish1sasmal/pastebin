@@ -16,6 +16,6 @@ class UserForm(forms.ModelForm):
 class TextForm(forms.ModelForm):
 	class Meta():
 		model=Text
-		exclude=('creator',)
+		exclude=('created_on','creator',)
 
 

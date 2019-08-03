@@ -62,7 +62,6 @@ def user_login(request):
 		if user:
 			if user.is_active:
 				login(request,user)
-				print(request.user)
 				return HttpResponseRedirect(reverse('index'))
 				print("login successful!")
 			else:
